@@ -99,8 +99,10 @@
 
 <nav>
   <div class="logo">Blackwell <span>Testing</span></div>
-  <button class="nav-cta" style="margin-right:8px;background:#3b82f6;color:#fff;border:none;" onclick="Calendly.initPopupWidget({url:'https://calendly.com/contact-blackwelltesting/30min'});return false;">Schedule a demo</button>
-  <button class="nav-cta" onclick="document.querySelector('.contact').scrollIntoView({behavior:'smooth'})">Send a message</button>
+  <div style="display:flex;gap:8px;">
+    <button class="nav-cta" style="background:#3b82f6;color:#fff;border:none;" onclick="Calendly.initPopupWidget({url:'https://calendly.com/contact-blackwelltesting/30min'});return false;">Schedule a demo</button>
+    <button class="nav-cta" onclick="document.querySelector('.contact').scrollIntoView({behavior:'smooth'})">Send a message</button>
+  </div>
 </nav>
 
 <section class="hero">
@@ -109,7 +111,7 @@
   <p>Blackwell Testing delivers end-to-end QA automation for SaaS companies, enterprises and startups. Playwright. TypeScript. GitLab CI/CD. Done right.</p>
   <div class="hero-btns">
     <button class="btn-primary" onclick="document.querySelector('.packages').scrollIntoView({behavior:'smooth'})">View packages</button>
-    <button class="btn-secondary" onclick="Calendly.initPopupWidget({url:'https://calendly.com/contact-blackwelltesting/30min'});return false;">Schedule a demo</button>
+    <button class="btn-primary" style="background:#3b82f6;border:none;" onclick="Calendly.initPopupWidget({url:'https://calendly.com/contact-blackwelltesting/30min'});return false;">Schedule a demo</button>
   </div>
 </section>
 
